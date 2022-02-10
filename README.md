@@ -13,6 +13,7 @@ Flutter, Google tarafından oluşturulan açık kaynaklı bir UI yazılım geli�
 
 6 Mayıs 2020'de, 2.8 sürümündeki Dart SDK ve 1.17.0 sürümündeki Flutter, Metal API'a desteğin eklendiği ve iOS cihazlarındaki (yaklaşık %50) ana widget'larındaki performansı büyük ölçüde artırdı. Ağ etkinlikleri izleme aracı ve çok daha fazlası eklendi.
 
+>Not : Kodları çalıştırırken fonksiyonların isimlerini void main() şeklinde değiştirin.
 
 
 [Flutter logo]: https://github.com/flutter/website/blob/archived-master/src/_assets/image/flutter-lockup-bg.jpg?raw=true
