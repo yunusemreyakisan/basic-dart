@@ -58,3 +58,42 @@ void degiskenler1() {
 
   print("$s1, $s2, $s3");
 }
+
+//Type Safety - Tür Güvenliği
+//Oluşturduğunuz değişkene farklı türde değişken atayamayız.
+
+//Değişken Kapsamları
+//Süslü	parantez	{	}	bizim	kapsamımızı	belirler.	Değişkenin	ulaşılabilirliği buna	bağlıdır.
+
+class Deneme {
+  int x = 2; //Global
+  int y = 5; //Global
+
+  void topla() {
+    int x = 5; //Yerel değişken Global değişkene baskın gelir.
+    x = x + y;
+
+    print(x);
+  }
+}
+
+// Constant - Sabitler (Sabit	kullanmak	memory yönetimini	rahatlatır.)
+// const değişken	oluşturduğumuz	anda	hafızada	oluşur.
+// final değişken	oluşturulduktan	sonra	kod	çalıştırıldığında	hafızada	oluşur.
+// const sınıf	içinde	kullanılmaz.
+
+final pi = 3.14;
+final String mesaj = "Hello";
+const a = 20;
+
+// Kaçış Karakterleri
+// Kaçış	karakterleri	String	ifade	içine	bazı	karakterleri	yazmamızı	sağlarlar.
+// Bunun	çıkış	sebebi	String	ifadelerin	”	işareti	ile	başlayıp	bitmesidir.
+// En	çok	kullanılan	kaçış	karakterleri.
+//  \\ – \ işareti
+//  \t – Bir	tab	boşluk	bırakır.
+//  \n	– Bir	alt	satıra	iner
+//  \” – Çift	tırnak	işareti
+//  \’ – Tek	tırnak	işareti
+
+//Yorum Satırları
