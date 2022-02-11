@@ -42,3 +42,23 @@ void operatorler() {
   c = c / 3; //Uzun hali
   c /= 3; //Kısa Hali
 }
+
+
+
+//Karşılaştırma Operatörleri
+//Koşul	gereken	yerlerde	kullanılır.	Örn :	if ,	while vb.
+
+// == : Eşittir.
+// != : Eşit değil.
+// <  : Küçüktür.
+// >  : Büyüktür.
+// >= : Büyük Eşittir.
+// <= : Küçük Eşittir.
+
+
+//Mantıksal Operatörler
+//Mantıksal	işlemleri	bu	operatörler	ile	yaparız.
+
+// && : Her iki koşulda sağlanıyorsa true olur. (ve)
+// || : İki koşuldan birisi sağlanıyorsa true olur. (veya)
+// !  : Var olan durumun tersine dönüştürür. (false -> true) (not)
