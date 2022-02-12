@@ -24,3 +24,10 @@ void ana() {
 //continue : İşlemi devam ettirir.
 
 //Alıştırma : Konsoldan girilen adınızı konsoldan girilen tekrar sayısı kadar ekrana yazdırın.
+var i = 0;
+var isim = "Yunus Emre ";
+void tekrar() {
+  for (i = 0; i < 5; i++) {
+    print("Konsoldan girilen isim: $isim");
+  }
+}
