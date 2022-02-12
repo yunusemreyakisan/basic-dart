@@ -57,3 +57,13 @@ void mathifade() {
   double s = sqrt(x);
   print("S: $s");
 }
+
+void mathifade2() {
+  int y = -10;
+
+  int a = y.abs();
+  print("a: $a");
+
+  num p = pow(2, 10);
+  print("p: $p");
+}
