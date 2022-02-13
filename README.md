@@ -15,6 +15,34 @@ Flutter, Google tarafından oluşturulan açık kaynaklı bir UI yazılım geli�
 
 >Not : Çalıştırmak istediğiniz kodların başında yer alan fonksiyonların isimlerini void main() şeklinde değiştirin.
 
+## 🚗 Nesne Tabanlı Programlama (OOP)
+
+Nesne tabanlı programlama, daha öncelerde yaygın olarak kullanılan prosedür 
+tabanlı programlama mantığının yetersiz kaldığı bazı durumları aşmak için geliştirilen bir 
+programlama metodudur.
+
+``` markdown
+//Sınıf oluşturuyoruz.
+class Araba {
+  late String renk;
+  late int hiz;
+  late bool calisiyorMu;
+}
+
+//main methodu içerisinde class içerisine erişiyoruz.
+void main() {
+  var bmw = Araba();
+
+  bmw.renk = "Sarı";
+  bmw.hiz = 100;
+  bmw.calisiyorMu = true;
+
+  print(bmw.renk); //Sarı
+  print(bmw.hiz); //100
+  print(bmw.calisiyorMu); //true
+}
+```
+
 
 [Flutter logo]: https://github.com/flutter/website/blob/archived-master/src/_assets/image/flutter-lockup-bg.jpg?raw=true
 [flutter.dev]: https://flutter.dev
