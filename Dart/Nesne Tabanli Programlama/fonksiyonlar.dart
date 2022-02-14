@@ -63,8 +63,7 @@ String donusSelamla() {
 
 String gelendonusluSelam = donusSelamla();
 print(gelendonusluSelam) {
-  // TODO: implement print
-  throw UnimplementedError();
+  print("");
 }
 
 //Fonksiyonların parametre alması
@@ -100,4 +99,17 @@ hesapla(int kKenar, int uKenar) {
 void anaCalistir() {
   int dikdortgenHesapla = hesapla(2, 5);
   print(dikdortgenHesapla);
+}
+
+//Ödev-2 :  Parametre	olarak	girilen	sayının	faktoriyel değerini	hesaplayıp	geri	döndüren	metodu	yazınız.
+faktoriyel(int sayi) {
+  for (int i = 1; i <= sayi; i++) {
+    sayi *= i;
+  }
+  return sayi;
+}
+
+void faktoriyelHesapla() {
+  int sonuc = faktoriyel(2);
+  print(sonuc);
 }
