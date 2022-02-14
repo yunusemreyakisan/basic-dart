@@ -113,3 +113,23 @@ void faktoriyelHesapla() {
   int sonuc = faktoriyel(2);
   print(sonuc);
 }
+
+//Ödev-3 : Parametre	olarak	girilen	gün	sayısına	göre	maaş	hesabı	yapan	ve	elde	edilen	 değeri	geri	döndüren	metod yazınız.
+// 1	Günde	8	saat	çalışılabilir.
+// Çalışma	saat	ücreti	:	10	tl
+// Mesai	saat	ücreti	:	20tl
+// 160	saat	üzeri	mesai	sayılır.
+
+maasHesabi(int gun, mesai) {
+  int gunUcreti = 8 * 10;
+  int gunlukMesaaiUcret = (mesai * 20); //mesai saaati ve sayısıyla çarparız.
+
+  int maasHesabiniYap = (gun * gunUcreti) + (gunlukMesaaiUcret);
+  return maasHesabiniYap;
+}
+
+void maasiHesaplayanFonksiyon() {
+  //void yazıp çalıştırın.
+  int maasiniz = maasHesabi(5, 5);
+  print(maasiniz);
+}
