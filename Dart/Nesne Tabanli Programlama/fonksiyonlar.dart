@@ -29,9 +29,9 @@ class Otobus {
 }
 
 void main() {
-  var efetur = new Otobus();
+  var efetur = Otobus();
 
-  efetur.kalkisSaati = 17.05;
+  efetur.kalkisSaati = 17.06;
   efetur.nereden = "Orhangazi";
   efetur.nereye = "Düzce";
   efetur.yolcuSayisi = 23;
@@ -39,6 +39,7 @@ void main() {
   efetur.kalkisZamaninaEkle(2);
   efetur.yolcuAl(10);
   efetur.yolcuIndir(5);
+
   efetur.efeturBilgi();
 }
 
