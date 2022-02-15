@@ -27,3 +27,12 @@ void kosulTanimlama() {
         "Sonuc: ${isim?.toUpperCase()}"); // if kontrolü sonrasında nullable özelliği direkt kullanılabilir.
   }
 }
+
+//late :  Hafıza	yönetimini	verimli	hale	getirmek	için	kullanılır.
+class LateKullanimi {
+  //int x ; Bu şekilde içerisinde bir değer olmadan atama yapamayız.
+
+  late int y; //late ile değer ataması olmadan tanımlayabiliriz.
+
+  int z = 10; //Değer atayarak her zaman çalıştırabiliriz.
+}
