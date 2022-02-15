@@ -7,5 +7,23 @@
 // Bu	özelliğe	sahip	değişken	daha	sonra	if	ile	null	kontrolü	yapılarak	kullanılması	önerilir.
 // Null	safety	özelliği	olan	değişkenden	sonra	!	işareti	kullanılırsa	,	null	olmayacağını	ben	kodlamama	güveniyorum	demektir.
 // Null	safety	özelliği	olan	değişkenden	sonra ?	kullanırsa	,	null	olduğunda	hata	oluşmaz	korumaya	alır	,	null	olmaz	ise	normal	çalışmasını	gerçekleştirir.
+void main() {
+  String? mesaj = null; // ? işareti ile nullable yapılır.
+  mesaj = "Merhaba"; // Nullable ifadeye sonradan değer aktarılabilir.
+}
 
-String? mesaj = null;
+// Tanımlama sonrası kullanımı
+String? isim = null;
+void tanimlama() {
+  print(
+      "Sonuc: ${isim?.toUpperCase()}"); //? null ise çökmez, null olmazsa çalışır.
+  print(
+      "Sonuc2: ${isim!.toLowerCase()}"); // ! uyarıdan kurtarır ama hata verme ihtimali vardır.
+}
+
+void kosulTanimlama() {
+  if (isim != null) {
+    print(
+        "Sonuc: ${isim?.toUpperCase()}"); // if kontrolü sonrasında nullable özelliği direkt kullanılabilir.
+  }
+}
