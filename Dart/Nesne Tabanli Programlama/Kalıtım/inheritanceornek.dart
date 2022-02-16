@@ -1,4 +1,5 @@
 class Arac {
+  //superclass
   String renk;
   String vites;
 
@@ -6,12 +7,14 @@ class Arac {
 }
 
 class Araba extends Arac {
+  //subclass
   String kasaTipi;
 
   Araba(this.kasaTipi, String vites, String renk) : super(vites, renk);
 }
 
 class Volvo extends Araba {
+  //subclass
   String model;
   Volvo(this.model, String kasaTipi, String vites, String renk)
       : super(kasaTipi, vites, renk);

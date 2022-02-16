@@ -10,17 +10,30 @@
 
 //Hiyerarşi Örneği:
 
-//SUPERCLASS
 class Ev {
-  late int pencereSayisi;
+  int pencereSayisi;
+
+  Ev(this.pencereSayisi);
 }
 
-//SUBCLASS
 class Saray extends Ev {
-  late int kuleSayisi;
+  int kuleSayisi;
+  Saray(this.kuleSayisi, int pencereSayisi) : super(pencereSayisi);
 }
 
-//SUBCLASS
 class Villa extends Ev {
-  late bool garaj;
+  bool garaj;
+  Villa(this.garaj, int pencereSayisi) : super(pencereSayisi);
+}
+
+void main() {
+  var topkapi = Saray(10, 100);
+  var bogazVilla = Villa(true, 20);
+
+  print(topkapi.kuleSayisi); //Kendi değişkeni
+  print(topkapi.pencereSayisi); //Kalıtım ile gelen değişken
+  //print(topkapi.garaj); //Saray ile Villa arasında bir kalıtım yok. Hata verir!
+
+  print(bogazVilla.pencereSayisi); //Kalıtım ile gelen değişken
+  print(bogazVilla.garaj); //Kendi değişkeni
 }
