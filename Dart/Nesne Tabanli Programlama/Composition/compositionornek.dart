@@ -36,7 +36,7 @@ void main() {
   var film2 = Filmler(1, "Matrix", 1999, k1, y1);
 
   print(
-      "Vizyondaki ilk film ${film1.film_ad} ve kategorisi ${film1.kategori.kategori_ad}");
+      "Vizyondaki ilk film ${film1.film_ad} ve kategorisi ${film1.kategori.kategori_ad} olup ${film1.film_yili} yılında yapılan bu yapımın yönetmeni ise ${film1.yonetmen.yonetmen_ad}'dır.");
   print(
-      "Vizyondaki ikinci film ise ${film2.film_yili} yılında çıkış yapan ${film2.film_ad} ve ${film2.kategori.kategori_ad} türündedir.");
+      "Vizyondaki ikinci film ise ${film2.film_yili} yılında çıkış yapan ${film2.film_ad} ve ${film2.kategori.kategori_ad} türündedir. Yönetmeni ise ${film2.yonetmen.yonetmen_ad}'dir.");
 }
