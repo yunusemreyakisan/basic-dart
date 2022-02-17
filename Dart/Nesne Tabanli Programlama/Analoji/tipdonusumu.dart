@@ -1,6 +1,6 @@
 //Tip Kontrolü :  Tip	kontrolü is	ile	yapılabilir .is	true false şeklinde	bilgi	verir.
-import 'Kalıtım/inheritance.dart';
-import 'Kalıtım/polymorphism.dart';
+import '../Kalıtım/inheritance.dart';
+import '../Kalıtım/polymorphism.dart';
 
 var saray = Saray(3, 30);
 void main() {
