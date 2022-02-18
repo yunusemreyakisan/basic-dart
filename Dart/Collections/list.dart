@@ -53,5 +53,5 @@ void meyvelerListesi() {
 }
 
 //List tanımlama yöntemleri
-var iller = <String>[];
+var sehirler = <String>[];
 var plakalar = [16, 34, 7];
