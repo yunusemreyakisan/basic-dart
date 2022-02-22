@@ -12,7 +12,7 @@ class Asinifi {
 }
 
 void main() {
-  print(Asinifi.degisken);
+  print(Asinifi.degisken); //Değişken oluşturmadan sınıf içerisine erişim
   Asinifi.degisken = 100;
   print(Asinifi.degisken);
   print(Asinifi.oran);

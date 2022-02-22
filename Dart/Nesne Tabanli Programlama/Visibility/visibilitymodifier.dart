@@ -2,7 +2,7 @@
 //Private : Metod ve değişkenler. Yalnızca tanımlandıkları sınıftan ulaşılabilir.
 //Not	:	Hiçbir	access modifier kullanılmıyorsa	public anlamına	gelir.
 
-//Örnek-1 : Visibility Modifier
+//Örnek-1 : Visibility Modifier (_)
 class A {
   late int publicDegisken;
   late int _privateDegisken; //Private ifadesi _ ile eklenir.
